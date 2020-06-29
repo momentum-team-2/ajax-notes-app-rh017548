@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="moment.js" defer></script>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
+  <link rel="stylesheet" href="style.css">
   <title>Notes</title>
 </head>
+
 <body>
-  
+  <header>
+    <h1>NOTES R'USS</h1>
+  </header>
+  <main class="notesapp">
+    <form id="notes">
+      <textarea type='text' id="textbox" name="textbox" rows="5" cols="30"></textarea>
+      <button type="submit" id="savebutton">Save</button>
+    </form>
+    <section class='saved_notes'></section>
+
+  </main>
 </body>
+
 </html>
